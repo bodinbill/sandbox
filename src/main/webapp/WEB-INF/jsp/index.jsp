@@ -3,14 +3,14 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="tc" tagdir="/WEB-INF/tags/common" %>
 
-<link rel="stylesheet" href="/css/item.css">
-<script src="/js/item.js"></script>
+<link rel="stylesheet" href="/css/bundle/item.css">
 
-
-<div class="row">
-    <c:forEach var="item" items="${items}">
+<div id="itemList" class="row">
+    <c:forEach var="item" items="${items}" varStatus="status">
         <div class="col-sm-4">
             <tc:item item="${item}"/>
         </div>
     </c:forEach>
 </div>
+
+<script src="/js/bundle/item.js"></script>

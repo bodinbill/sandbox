@@ -3,6 +3,7 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ attribute name="item" type="com.bodin.model.web.WebItem" %>
+<%@ attribute name="index" type="java.lang.Integer" %>
 
 <div class="item">
     <img src="${item.entity.imageUrl}">
@@ -17,7 +18,7 @@
         ${item.qtyText}
     </div>
     <div class="show-details-c">
-        <div class="show-details btn btn-info">Show details</div>
-        <div class="collapse">${item.entity.description}</div>
+        <div class="show-details btn btn-info" v-on:click="toggle">Show details</div>
+        <div class="collapse" v-if="isVisible">${item.entity.description}</div>
     </div>
 </div>

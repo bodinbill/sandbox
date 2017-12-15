@@ -1,0 +1,39 @@
+$color-grey: #666666;
+$color-light-grey: #e7e7e7;
+$color-red: #ff0000;
+
+$space-normal: 15px;
+$space-small: 10px;
+$space-line: 1px;
+
+$font-size-small: 14px;
+
+@mixin round($space) {
+  -webkit-border-radius: $space;
+  -moz-border-radius: $space;
+  border-radius: $space;
+}
+
+@mixin item() {
+  border: $space-line solid $color-light-grey;
+  padding: $space-small;
+  @include round(3px);
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  .full-price {
+    color: $color-red;
+    text-decoration: line-through;
+  }
+
+  h5, .price-c, .show-details-c {
+    margin-top: $space-normal;
+  }
+
+  .qty {
+    font-size: $font-size-small;
+    color: $color-grey;
+  }
+}
