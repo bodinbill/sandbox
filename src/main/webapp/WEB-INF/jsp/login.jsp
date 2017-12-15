@@ -16,8 +16,8 @@
                     <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                 </div>
             </div>
-            <fieldset class="form-group row">
-                <legend class="col-form-legend col-sm-2">Radios</legend>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Radios</label>
                 <div class="col-sm-10">
                     <div class="form-check">
                         <label class="form-check-label">
@@ -38,7 +38,7 @@
                         </label>
                     </div>
                 </div>
-            </fieldset>
+            </div>
             <div class="form-group row">
                 <label class="col-sm-2">Checkbox</label>
                 <div class="col-sm-10">
