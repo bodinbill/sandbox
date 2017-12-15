@@ -1,0 +1,8 @@
+for package.json run:
+npm install
+
+for compile scss:
+npm run-script build-css
+
+for compile js:
+npm run-script build
